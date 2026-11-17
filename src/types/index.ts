@@ -1,9 +1,10 @@
 export type User = {
+  id: string
   username: string
-  password: string
   status: 'pending' | 'approved' | 'rejected'
   enabled: boolean
-  role: 'admin' | 'user'
+  role: 'superadmin' | 'user'
+  createdAt: string
 }
 
 export type Category = {
